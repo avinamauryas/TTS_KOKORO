@@ -1,0 +1,6 @@
+kokoro>=0.9.4,<1
+gradio
+soundfile
+scipy
+spacy
+torch --extra-index-url https://download.pytorch.org/whl/cpu
