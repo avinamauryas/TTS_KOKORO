@@ -77,9 +77,18 @@ with gr.Blocks(title="Offline Voice Generator") as app:
         concurrency_limit=1,
     )
 
+# Replace the two launch calls with this single line:
 app.queue().launch(
-    server_name="127.0.0.1",
+    server_name="0.0.0.0",
     server_port=7860,
     share=False,
-    inbrowser=True,
 )
+
+# app.queue().launch(
+#     server_name="127.0.0.1",
+#     server_port=7860,
+#     share=False,
+#     inbrowser=True,
+# )
+
+# app.launch(server_name="0.0.0.0", server_port=7860)
